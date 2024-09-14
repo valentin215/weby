@@ -1,6 +1,6 @@
 class Logger
   def initialize(app)
-    @app = app
+    @app = app # App.new or another middleware
   end
 
   def call(env)
