@@ -6,11 +6,11 @@ class App
   def initialize
     @router = Router.new
     
-    router.get('/') { "Akshay's Blog" }
+    router.get('/') { "Hello World !" }
     
-    router.get('/articles') { 'All Articles' }
+    router.get('/worlds') { 'All Worlds' }
     
-    router.get('/articles/1') { "First Article" }
+    router.get('/worlds/1') { "First World" }
   end
   
   def call(env)
