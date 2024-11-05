@@ -16,7 +16,7 @@ class Router
       Router.instance.instance_exec(&block)
     end
   end
-  
+
   # block is the handler code that will be executed when the route is hit
   def get(path, &block)
     @routes[path] = block
