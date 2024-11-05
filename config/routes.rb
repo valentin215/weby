@@ -1,5 +1,3 @@
-# config/routes.rb
-
 require_relative "../router"
 
 Router.draw do
@@ -7,5 +5,8 @@ Router.draw do
 
   get("/worlds") { "All Worlds" }
 
-  get("/worlds/1") { "First World" }
+  get("/worlds/1") do |env|
+    puts "Path: First World #{env["REQUEST_PATH"]}"
+    "First World"
+  end
 end
