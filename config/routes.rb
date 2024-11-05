@@ -1,12 +1,12 @@
 require_relative "../router"
 
 Router.draw do
-  get("/") { "Hello World !" }
+  get("/") { "Hello Articles !" }
 
-  get("/worlds") { "All Worlds" }
+  get("/articles") { "All Articless" }
 
-  get("/worlds/1") do |env|
+  get("/articles/1") do |env|
     puts "Path: First World #{env["REQUEST_PATH"]}"
-    "First World"
+    "First Article"
   end
 end
