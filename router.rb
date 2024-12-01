@@ -44,7 +44,7 @@ class Router
   # input: 'articles'
   # output: ArticlesController
   def constantize(name)
-    controller_klass_name = name.capitalize + 'Controller' # "ArticlesController" (a string)
+    controller_klass_name = "#{name.capitalize}Controller" # "ArticlesController" (a string)
     Object.const_get(controller_klass_name) # ArticlesController (a class)
   end
 end
