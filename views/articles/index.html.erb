@@ -1,4 +1,4 @@
-<!-- views/index.html -->
+<!-- views/articles/index.html -->
 
 <html>
   <head>
@@ -9,7 +9,16 @@
 
   <body>
     <main>
-      <h1>All Articles</h1>
+      <header>
+        <h1>
+          <%= @title %>
+        </h1>
+        <p>
+          <%= @tagline %>
+        </p>
+      </header>
+
+      <hr>
     </main>
   </body>
 </html>

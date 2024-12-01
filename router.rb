@@ -20,13 +20,18 @@ class Router
 
   # block is the handler code that will be executed when the route is hit
   def get(path, &block)
-    @routes[path] = (block || lambda { |env|
-      controller_name, action_name = find_controller_action(path)   # 'articles', 'index'
-      controller_klass = constantize(controller_name)               # ArticlesController
-      controller = controller_klass.new(env)                        # ArticlesController.new(env)
+    if block
+      @routes[path] = block
+    else
+      @routes[path] = lambda { |env|
+        controller_name, action_name = find_controller_action(path)   # 'articles', 'index'
+        controller_klass = constantize(controller_name)               # ArticlesController
+        controller = controller_klass.new(env)                        # controller = ArticlesController.new(env)
+        controller.send(action_name.to_sym)                           # controller.index
 
-      controller.send(action_name.to_sym)                           # controller.index
-    })
+        controller.render("views/#{controller_name}/#{action_name}.html.erb")
+      }
+    end
   end
 
   def build_response(env)

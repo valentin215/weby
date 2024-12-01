@@ -3,7 +3,7 @@
 require_relative 'application_controller'
 class ArticlesController < ApplicationController
   def index
-    index_file = File.join(Dir.pwd, 'views', 'index.html')
-    File.read(index_file)
+    @title = 'Rebuild Rails Framework !'
+    @tagline = 'A simple repository to understand the foundations of Rails'
   end
 end

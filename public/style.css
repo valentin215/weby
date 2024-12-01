@@ -3,3 +3,12 @@ main {
     margin: 1em auto;
     font-family: sans-serif;
   }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  article {
+    padding-top: 1em;
+  }
