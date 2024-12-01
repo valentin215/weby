@@ -3,6 +3,7 @@
 require_relative 'application_controller'
 class ArticlesController < ApplicationController
   def index
-    '<h1>All Articles</h1>'
+    index_file = File.join(Dir.pwd, 'views', 'index.html')
+    File.read(index_file)
   end
 end
