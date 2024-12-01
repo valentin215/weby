@@ -1,3 +1,4 @@
+# Controller for handling Article-related requests
 class ArticlesController
   attr_reader :env
 
@@ -6,6 +7,6 @@ class ArticlesController
   end
 
   def index
-    "<h1>All Articles</h1>"
+    '<h1>All Articles</h1>'
   end
 end
