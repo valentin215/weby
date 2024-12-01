@@ -1,11 +1,7 @@
 # Controller for handling Article-related requests
-class ArticlesController
-  attr_reader :env
 
-  def initialize(env)
-    @env = env
-  end
-
+require_relative 'application_controller'
+class ArticlesController < ApplicationController
   def index
     '<h1>All Articles</h1>'
   end
