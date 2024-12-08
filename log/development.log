@@ -94,3 +94,49 @@ I, [2024-12-08T17:51:58.228041 #17638]  INFO -- : GET: /
 I, [2024-12-08T17:51:58.304173 #17638]  INFO -- : GET: /favicon.ico
 I, [2024-12-08T17:52:04.997143 #17638]  INFO -- : GET: /articles/index
 I, [2024-12-08T17:52:05.083481 #17638]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:56:16.226609 #18799]  INFO -- : GET: /articles/index
+E, [2024-12-08T17:56:16.226957 #18799] ERROR -- : uninitialized constant App::Router (NameError)
+/Users/valentin/Developer/weby/app.rb:36:in `router'
+/Users/valentin/Developer/weby/app.rb:24:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/static.rb:161:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/reloader.rb:47:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/configuration.rb:272:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:100:in `block in handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:99:in `handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:464:in `process_client'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:245:in `block in run'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+I, [2024-12-08T17:56:16.302445 #18799]  INFO -- : GET: /favicon.ico
+E, [2024-12-08T17:56:16.302687 #18799] ERROR -- : uninitialized constant App::Router (NameError)
+/Users/valentin/Developer/weby/app.rb:36:in `router'
+/Users/valentin/Developer/weby/app.rb:24:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/static.rb:161:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/reloader.rb:47:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/configuration.rb:272:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:100:in `block in handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:99:in `handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:464:in `process_client'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:245:in `block in run'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+I, [2024-12-08T18:34:01.145960 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:01.308162 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:02.169673 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:02.252780 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:02.659103 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:02.735954 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:02.947937 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:03.021634 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:03.158319 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:03.233971 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:03.309952 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:03.356964 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:12.253040 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:12.331297 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:13.144705 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:13.220088 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:13.797848 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:13.852500 #20559]  INFO -- : Request: GET /favicon.ico
+I, [2024-12-08T18:34:14.351821 #20559]  INFO -- : Request: GET /articles/index
+I, [2024-12-08T18:34:14.432950 #20559]  INFO -- : Request: GET /favicon.ico
