@@ -61,3 +61,24 @@ E, [2024-12-08T11:57:24.837242 #8651] ERROR -- : Stack Overflow! (RuntimeError)
 /Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:245:in `block in run'
 /Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:155:in `block in spawn_thread'
 I, [2024-12-08T11:57:24.918907 #8651]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:40:02.757933 #8651]  INFO -- : GET: /articles/index
+E, [2024-12-08T17:40:02.759117 #8651] ERROR -- : undefined method `body' for an instance of Article (NoMethodError)
+(erb):28:in `render'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/3.3.0/erb.rb:429:in `eval'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/3.3.0/erb.rb:429:in `result'
+/Users/valentin/Developer/weby/controllers/application_controller.rb:13:in `render'
+/Users/valentin/Developer/weby/router.rb:32:in `block in get'
+/Users/valentin/Developer/weby/router.rb:40:in `build_response'
+/Users/valentin/Developer/weby/app.rb:17:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/static.rb:161:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/reloader.rb:47:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/configuration.rb:272:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:100:in `block in handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:99:in `handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:464:in `process_client'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:245:in `block in run'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+I, [2024-12-08T17:40:02.933940 #8651]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:40:08.859841 #8651]  INFO -- : GET: /articles/index
+I, [2024-12-08T17:40:08.943433 #8651]  INFO -- : GET: /favicon.ico
