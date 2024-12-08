@@ -1,0 +1,63 @@
+# Logfile created on 2024-12-08 11:38:07 +0100 by logger.rb/v1.6.1
+I, [2024-12-08T11:38:39.890923 #7761]  INFO -- : GET: /worlds
+I, [2024-12-08T11:38:40.133500 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:38:43.664430 #7761]  INFO -- : GET: /
+I, [2024-12-08T11:38:43.753788 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:38:47.700078 #7761]  INFO -- : GET: /
+I, [2024-12-08T11:38:47.787192 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:38:51.845149 #7761]  INFO -- : GET: /articles
+I, [2024-12-08T11:38:51.927875 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:39:06.797033 #7761]  INFO -- : GET: /articles/index
+I, [2024-12-08T11:39:06.911958 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:50:13.286682 #7761]  INFO -- : GET: /articles/index
+E, [2024-12-08T11:50:13.287169 #7761] ERROR -- : Oops, something went wrong. Error: Stack Overflow!
+I, [2024-12-08T11:50:13.367711 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:55:54.475764 #7761]  INFO -- : GET: /articles/index
+I, [2024-12-08T11:55:54.562299 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:56:05.365807 #7761]  INFO -- : GET: /articles/index
+E, [2024-12-08T11:56:05.366089 #7761] ERROR -- : Stack Overflow!
+I, [2024-12-08T11:56:05.446633 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:56:06.419157 #7761]  INFO -- : GET: /articles/index
+E, [2024-12-08T11:56:06.419599 #7761] ERROR -- : Stack Overflow!
+I, [2024-12-08T11:56:06.511955 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:56:06.781721 #7761]  INFO -- : GET: /articles/index
+E, [2024-12-08T11:56:06.781867 #7761] ERROR -- : Stack Overflow!
+I, [2024-12-08T11:56:06.858642 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:56:07.165536 #7761]  INFO -- : GET: /articles/index
+E, [2024-12-08T11:56:07.165840 #7761] ERROR -- : Stack Overflow!
+I, [2024-12-08T11:56:07.254305 #7761]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:56:41.378558 #8481]  INFO -- : GET: /articles/index
+E, [2024-12-08T11:56:41.379679 #8481] ERROR -- : Stack Overflow!
+I, [2024-12-08T11:56:41.465609 #8481]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:57:15.979695 #8481]  INFO -- : GET: /articles/index
+E, [2024-12-08T11:57:15.980271 #8481] ERROR -- : Stack Overflow! (RuntimeError)
+/Users/valentin/Developer/weby/controllers/articles_controller.rb:6:in `index'
+/Users/valentin/Developer/weby/router.rb:30:in `block in get'
+/Users/valentin/Developer/weby/router.rb:40:in `build_response'
+/Users/valentin/Developer/weby/app.rb:17:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/static.rb:161:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/reloader.rb:47:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/configuration.rb:272:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:100:in `block in handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:99:in `handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:464:in `process_client'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:245:in `block in run'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+I, [2024-12-08T11:57:16.066709 #8481]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T11:57:24.836975 #8651]  INFO -- : GET: /articles/index
+E, [2024-12-08T11:57:24.837242 #8651] ERROR -- : Stack Overflow! (RuntimeError)
+/Users/valentin/Developer/weby/controllers/articles_controller.rb:6:in `index'
+/Users/valentin/Developer/weby/router.rb:30:in `block in get'
+/Users/valentin/Developer/weby/router.rb:40:in `build_response'
+/Users/valentin/Developer/weby/app.rb:17:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/static.rb:161:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/rack-3.1.8/lib/rack/reloader.rb:47:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/configuration.rb:272:in `call'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:100:in `block in handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/request.rb:99:in `handle_request'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:464:in `process_client'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/server.rb:245:in `block in run'
+/Users/valentin/.asdf/installs/ruby/3.3.4/lib/ruby/gems/3.3.0/gems/puma-6.4.2/lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+I, [2024-12-08T11:57:24.918907 #8651]  INFO -- : GET: /favicon.ico
