@@ -82,3 +82,15 @@ E, [2024-12-08T17:40:02.759117 #8651] ERROR -- : undefined method `body' for an 
 I, [2024-12-08T17:40:02.933940 #8651]  INFO -- : GET: /favicon.ico
 I, [2024-12-08T17:40:08.859841 #8651]  INFO -- : GET: /articles/index
 I, [2024-12-08T17:40:08.943433 #8651]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:51:54.287816 #17638]  INFO -- : GET: /articles/index
+I, [2024-12-08T17:51:54.373695 #17638]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:51:55.166333 #17638]  INFO -- : GET: /articles/index
+I, [2024-12-08T17:51:55.229996 #17638]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:51:55.531669 #17638]  INFO -- : GET: /articles/index
+I, [2024-12-08T17:51:55.610189 #17638]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:51:55.822404 #17638]  INFO -- : GET: /articles/index
+I, [2024-12-08T17:51:55.896277 #17638]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:51:58.228041 #17638]  INFO -- : GET: /
+I, [2024-12-08T17:51:58.304173 #17638]  INFO -- : GET: /favicon.ico
+I, [2024-12-08T17:52:04.997143 #17638]  INFO -- : GET: /articles/index
+I, [2024-12-08T17:52:05.083481 #17638]  INFO -- : GET: /favicon.ico

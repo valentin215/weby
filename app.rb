@@ -1,4 +1,5 @@
 require 'logger'
+require 'zeitwerk'
 require_relative './config/routes'
 
 # Rack application
@@ -7,6 +8,12 @@ class App
 
   def initialize
     @logger = Logger.new('log/development.log')
+
+    # The push_dir method pushes the directory to the list of root directories
+    loader = Zeitwerk::Loader.new
+    loader.push_dir('models')
+    loader.push_dir('controllers')
+    loader.setup
   end
 
   def call(env)

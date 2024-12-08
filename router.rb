@@ -1,7 +1,6 @@
 # weby/router.rb
 
 require 'singleton'
-require_relative 'controllers/articles_controller'
 
 class Router
   include Singleton
