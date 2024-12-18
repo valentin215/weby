@@ -1,10 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    mini_portile2 (2.8.8)
     nio4r (2.7.3)
     puma (6.4.2)
       nio4r (~> 2.0)
     rack (3.1.7)
+    sqlite3 (2.4.1)
+      mini_portile2 (~> 2.8.0)
+    sqlite3 (2.4.1-arm64-darwin)
     zeitwerk (2.7.1)
 
 PLATFORMS
@@ -14,6 +18,7 @@ PLATFORMS
 DEPENDENCIES
   puma (~> 6.4)
   rack (~> 3.1)
+  sqlite3
   zeitwerk (~> 2.7)
 
 BUNDLED WITH

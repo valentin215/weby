@@ -9,6 +9,6 @@ use Rack::Reloader, 0
 # from the "public" folder
 use Rack::Static, urls: ['/public']
 
-use Logging
+use Middleware::Logging
 
 run App.new
