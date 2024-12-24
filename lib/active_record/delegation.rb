@@ -1,5 +1,5 @@
 module ActiveRecord
   module Delegation
-    DELEGATED_METHODS = [Relation].freeze
+    DELEGATED_CLASSES = [Relation].freeze
   end
 end
