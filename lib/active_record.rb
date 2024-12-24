@@ -1,0 +1,6 @@
+require_relative 'active_record/base'
+require_relative 'active_record/relation'
+require_relative 'active_record/delegation'
+require_relative 'active_record/class_specific_relation'
+require_relative 'active_record/current_scope'
+require_relative 'active_record/database_connection'

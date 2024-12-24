@@ -1,5 +1,4 @@
-#! /usr/bin/env ruby
-
+#!/usr/bin/env ruby
 require_relative '../lib/active_record'
 
 # Database Setup and Record Insertion
@@ -38,4 +37,4 @@ puts User.active.where(organization: 'RubyCademy').recent.to_a
 
 # Execution
 # chmod +x bin/active_record.rb
-# bin/active_record.rb
+# .bin/active_record.rb
