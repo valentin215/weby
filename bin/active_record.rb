@@ -25,19 +25,23 @@ class User < ActiveRecord::Base
   def self.active
     where(active: 1)
   end
+
+  def self.recent
+    order(created_at: :asc)
+  end
 end
 
 # Query Example
-puts User.where(organization: 'RubyCademy').active.count
-puts User.active.where(organization: 'RubyCademy').to_a
+puts User.where(organization: 'RubyCademy').active.recent.count
+puts User.active.where(organization: 'RubyCademy').recent.to_a
 
 # Execution
 # chmod +x bin/active_record.rb
 # .bin/active_record.rb
 
 # Output
-# Executing SQL: SELECT COUNT(*) FROM users WHERE organization = 'RubyCademy' AND active = '1'
+# Executing SQL: SELECT COUNT(*) FROM users WHERE organization = 'RubyCademy' AND active = '1' ORDER BY created_at ASC
 # 2
-# Executing SQL: SELECT * FROM users WHERE active = '1' AND organization = 'RubyCademy'
-# {"id"=>1, "name"=>"Alice", "organization"=>"RubyCademy", "active"=>1, "created_at"=>"2023-03-01"}
+# Executing SQL: SELECT * FROM users WHERE active = '1' AND organization = 'RubyCademy' ORDER BY created_at ASC
 # {"id"=>3, "name"=>"Charlie", "organization"=>"RubyCademy", "active"=>1, "created_at"=>"2022-02-01"}
+# {"id"=>1, "name"=>"Alice", "organization"=>"RubyCademy", "active"=>1, "created_at"=>"2023-03-01"}
