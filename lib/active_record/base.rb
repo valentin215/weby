@@ -2,21 +2,33 @@ module ActiveRecord
   class Base
     def self.inherited(subclass)
       subclass.initialize_relation_delegate_cache
+
+      puts "subclass: #{subclass.name}"
     end
 
     def self.initialize_relation_delegate_cache
       @relation_delegate_cache = {}
+
       Delegation::DELEGATED_CLASSES.each do |klass|
         delegate =
           Class.new(klass) do
             include ClassSpecificRelation
           end
 
+        puts "klass: #{klass.name}"
+        puts "self: #{name}"
+
         mangled_name = klass.name.gsub('::', '_')
         const_set mangled_name, delegate
         private_constant mangled_name
 
+        puts "mangled_name: #{mangled_name}"
+        puts "Setting relation delegate cache for #{klass.name} to #{delegate.name}"
+
         @relation_delegate_cache[klass] = delegate
+
+        puts "relation_delegate_cache: #{relation_delegate_cache}"
+        puts "delegate: #{delegate}"
 
         current_scope.scope = relation_delegate_cache[Relation].new(self)
       end
