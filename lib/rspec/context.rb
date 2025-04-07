@@ -5,6 +5,8 @@ module RSpec
       @lets = {}
       @before_hooks = []
       @after_hooks = []
+      @tests = []
+      @matchers = { eq: EqualMatcher }
     end
 
     def let(name, &block)
@@ -12,7 +14,7 @@ module RSpec
 
       define_singleton_method(name) do
         @memoized ||= {}
-        @memoized[name] ||= instance_eval(&block)
+        @memoized[name] ||= instance_eval(@lets[:name])
       end
     end
 
@@ -24,10 +26,38 @@ module RSpec
       @after_hooks << block
     end
 
+    def it(description, &block)
+      @tests << { description: description, block: block }
+    end
+
     def run
-      # test
-      pp('Before hooks', @before_hooks.each { |hook| hook.call }, 'After hooks', @after_hooks.each { |hook| hook.call })
-      pp 'Lets', @lets
+      puts "Running #{@description}"
+
+      @tests.each do |test|
+        @memoized = nil
+
+        @before_hooks.each { |hook| instance_eval(&hook) }
+
+        instance_eval(&test[:block])
+
+        @after_hooks.each { |hook| instance_eval(&hook) }
+      end
+    end
+
+    def expect(actual)
+      MyRSpec.expect(actual)
+    end
+
+    def method_missing(method_name, *args, &block)
+      if @matchers.key?(method_name)
+        @matchers[method_name].new(*args)
+      else
+        super
+      end
+    end
+
+    def respond_to_missing?(method_name, include_private = false)
+      @matchers.key?(method_name) || super
     end
   end
 end
