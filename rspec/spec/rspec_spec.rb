@@ -3,4 +3,7 @@ RSpec.describe 'Hook Test' do
   after { puts 'Running after each test' }
 
   let(:number) { 42 }
+
+  it 'is empty' do
+  end
 end
