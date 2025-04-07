@@ -5,7 +5,13 @@ module RSpec
     end
 
     def to(matcher)
-      return if matcher.match?(@actual)
+      return if matcher.matches?(@actual)
+
+      raise "Expected #{matcher.expected}, but got #{@actual}"
+    end
+
+    def not_to(matcher)
+      return unless matcher.matches?(@actual)
 
       raise "Expected #{matcher.expected}, but got #{@actual}"
     end

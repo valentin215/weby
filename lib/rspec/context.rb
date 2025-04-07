@@ -38,22 +38,27 @@ module RSpec
 
         @before_hooks.each { |hook| instance_eval(&hook) }
 
-        instance_eval(&test[:block])
+        begin
+          instance_eval(&test[:block])
+
+          puts "#{test[:description]}: Passed"
+        rescue StandardError => e
+          puts "#{test[:description]}: Failed - #{e.message}"
+        end
 
         @after_hooks.each { |hook| instance_eval(&hook) }
       end
     end
 
     def expect(actual)
-      MyRSpec.expect(actual)
+      RSpec.expect(actual)
     end
 
     def method_missing(method_name, *args, &block)
-      if @matchers.key?(method_name)
-        @matchers[method_name].new(*args)
-      else
-        super
-      end
+      matcher_class = @matchers[method_name]
+      return super if matcher_class.nil?
+
+      matcher_class.new(*args)
     end
 
     def respond_to_missing?(method_name, include_private = false)
