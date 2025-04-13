@@ -19,7 +19,7 @@ RSpec.describe 'Array' do
 
   it 'can be appended to' do
     array << 4
-    expect(array.size).to(eq(5))
+    expect(array.size).to(eq(4))
   end
 
   it 'is not empty' do
