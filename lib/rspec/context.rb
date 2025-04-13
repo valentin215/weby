@@ -6,7 +6,7 @@ module RSpec
       @before_hooks = []
       @after_hooks = []
       @tests = []
-      @matchers = { eq: EqualMatcher }
+      @matchers = { eq: EqualMatcher, be_empty: EmptyMatcher }
     end
 
     def let(name, &block)
@@ -14,7 +14,7 @@ module RSpec
 
       define_singleton_method(name) do
         @memoized ||= {}
-        @memoized[name] ||= instance_eval(@lets[:name])
+        @memoized[name] ||= instance_eval(&@lets[name])
       end
     end
 

@@ -1,3 +1,4 @@
+require_relative 'base_matcher'
 module RSpec
   class EqualMatcher < BaseMatcher
     def matches?(actual)
@@ -9,21 +10,9 @@ module RSpec
     def matches?(actual)
       actual.empty?
     end
-  end
 
-  class BaseMatcher
-    attr_reader :expected
-
-    def initialize(expected)
-      @expected = expected
+    def expected
+      'to be empty'
     end
-  end
-
-  def self.eq(expected)
-    EqualMatcher.new(expected)
-  end
-
-  def self.be_empty(expected)
-    EmptyMatcher.new(expected)
   end
 end
